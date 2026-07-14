@@ -1,3 +1,4 @@
+import services.BinarySearch;
 import services.FrequencyMaps;
 import services.TwoPointer;
 
@@ -9,6 +10,9 @@ void main() {
 //    Map<Character, Integer> freq = FrequencyMaps.frequencyMap("BANANA");
 //    System.out.println(freq);
 
-    String impressão = TwoPointer.letras("Let's take LeetCode contest");
-    System.out.println(impressão);
+//    String impressão = TwoPointer.letras("Let's take LeetCode contest");
+//    System.out.println(impressão);
+
+    int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    BinarySearch.binarySearch(nums, 3);
 }
