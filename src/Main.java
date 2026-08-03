@@ -22,6 +22,9 @@ void main() {
 //    int[] nums = {1, 2, 3, 1};
 //    System.out.println(ContainsDuplicate.containsDuplicate(nums));
 
-    System.out.println(firstUniqChar.firstUniqChar("loveleetcode"));
+//    System.out.println(firstUniqChar.firstUniqChar("loveleetcode"));
+
+    int[] prices = {7,1,5,3,6,4};
+    System.out.println(LeetCode121.maxProfit(prices));
 
 }
