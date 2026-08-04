@@ -1,4 +1,3 @@
-# DSA
 # DSA Journey (Java)
 
 Repositório dedicado aos meus estudos de **Data Structures & Algorithms (DSA)** utilizando **Java**. O objetivo é desenvolver uma base sólida em estruturas de dados, análise de complexidade e resolução de problemas, com foco em preparação para entrevistas técnicas e evolução como desenvolvedor.
