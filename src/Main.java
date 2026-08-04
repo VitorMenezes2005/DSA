@@ -27,9 +27,9 @@ void main() {
 //    int[] prices = {7,1,5,3,6,4};
 //    System.out.println(LeetCode121.maxProfit(prices));
 
-    int[] nums = {3,2,4};
-    int target = 6;
-    int[] resolution = LeetCode001.twoSun(nums, target);
-    System.out.println(resolution[0]);
-    System.out.println(resolution[1]);
+//    int[] nums = {3,2,4};
+//    int target = 6;
+//    int[] resolution = LeetCode001.twoSun(nums, target);
+//    System.out.println(resolution[0]);
+//    System.out.println(resolution[1]);
 }
