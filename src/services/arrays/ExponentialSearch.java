@@ -1,7 +1,4 @@
-package services;
-
-import java.util.ArrayList;
-import java.util.List;
+package services.arrays;
 
 public class ExponentialSearch {
     public static int binarySearch(int[] nums, Integer x, Integer l, Integer r){

@@ -1,4 +1,4 @@
-package services;
+package services.arrays;
 
 public class TwoPointer {
     public static String letras(String s){

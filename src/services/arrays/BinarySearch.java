@@ -1,4 +1,4 @@
-package services;
+package services.arrays;
 
 public class BinarySearch {
     public static Integer binarySearch(int[] nums, int x){

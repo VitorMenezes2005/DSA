@@ -1,4 +1,4 @@
-package services;
+package services.arrays;
 
 public class LeetCode121 {
     public static int maxProfit(int[] prices){
