@@ -1,4 +1,5 @@
 import services.arrays.*;
+import services.linkedLists.implementationDoublyLinkedList.DoublyLinkedList;
 import services.strings.*;
 import services.strings.LeetCode917;
 
@@ -35,5 +36,19 @@ void main() {
 //    System.out.println(resolution[0]);
 //    System.out.println(resolution[1]);
 
-    System.out.println(LeetCode917.reverseOnlyLetters("a-bC-dEf-ghIj"));
+//    System.out.println(LeetCode917.reverseOnlyLetters("a-bC-dEf-ghIj"));
+
+    DoublyLinkedList list = new DoublyLinkedList();
+
+    list.addToFront(10);
+    list.addToFront(5);
+    list.addToEnd(20);
+    list.addToEnd(30);
+
+    list.printForward(); // 5 10 20 30
+
+    System.out.println(list.removeFromFront()); // 5
+    System.out.println(list.removeFromEnd());   // 30
+
+    list.printForward(); // 10 20
 }
