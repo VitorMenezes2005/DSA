@@ -1,4 +1,4 @@
-package services.linkedLists.implementationDoublyLinkedList;
+package services.linkedLists.doublyLinkedList;
 
 public class Node {
     int value;

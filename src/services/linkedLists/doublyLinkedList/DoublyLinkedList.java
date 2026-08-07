@@ -1,6 +1,4 @@
-package services.linkedLists.implementationDoublyLinkedList;
-
-import javax.xml.transform.stream.StreamSource;
+package services.linkedLists.doublyLinkedList;
 
 public class DoublyLinkedList {
     private Node head;

@@ -1,7 +1,8 @@
-import services.arrays.*;
-import services.linkedLists.implementationDoublyLinkedList.DoublyLinkedList;
-import services.strings.*;
-import services.strings.LeetCode917;
+import services.linkedLists.doublyLinkedList.DoublyLinkedList;
+import services.linkedLists.leetCode206.ListNode;
+
+import static services.linkedLists.leetCode206.Resolution.printList;
+import static services.linkedLists.leetCode206.Resolution.reverseList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -38,17 +39,31 @@ void main() {
 
 //    System.out.println(LeetCode917.reverseOnlyLetters("a-bC-dEf-ghIj"));
 
-    DoublyLinkedList list = new DoublyLinkedList();
+//    DoublyLinkedList list = new DoublyLinkedList();
+//
+//    list.addToFront(10);
+//    list.addToFront(5);
+//    list.addToEnd(20);
+//    list.addToEnd(30);
+//
+//    list.printForward(); // 5 10 20 30
+//
+//    System.out.println(list.removeFromFront()); // 5
+//    System.out.println(list.removeFromEnd());   // 30
+//
+//    list.printForward(); // 10 20
 
-    list.addToFront(10);
-    list.addToFront(5);
-    list.addToEnd(20);
-    list.addToEnd(30);
+    ListNode head = new ListNode(1,
+            new ListNode(2,
+                    new ListNode(3,
+                            new ListNode(4,
+                                    new ListNode(5)))));
 
-    list.printForward(); // 5 10 20 30
+    System.out.println("Lista original:");
+    printList(head);
 
-    System.out.println(list.removeFromFront()); // 5
-    System.out.println(list.removeFromEnd());   // 30
+    ListNode reversed = reverseList(head);
 
-    list.printForward(); // 10 20
+    System.out.println("Lista invertida:");
+    printList(reversed);
 }
