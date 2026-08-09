@@ -53,17 +53,17 @@ void main() {
 //
 //    list.printForward(); // 10 20
 
-    ListNode head = new ListNode(1,
-            new ListNode(2,
-                    new ListNode(3,
-                            new ListNode(4,
-                                    new ListNode(5)))));
-
-    System.out.println("Lista original:");
-    printList(head);
-
-    ListNode reversed = reverseList(head);
-
-    System.out.println("Lista invertida:");
-    printList(reversed);
+//    ListNode head = new ListNode(1,
+//            new ListNode(2,
+//                    new ListNode(3,
+//                            new ListNode(4,
+//                                    new ListNode(5)))));
+//
+//    System.out.println("Lista original:");
+//    printList(head);
+//
+//    ListNode reversed = reverseList(head);
+//
+//    System.out.println("Lista invertida:");
+//    printList(reversed);
 }
