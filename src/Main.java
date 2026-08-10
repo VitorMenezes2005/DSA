@@ -1,5 +1,6 @@
 import services.linkedLists.doublyLinkedList.DoublyLinkedList;
 import services.linkedLists.leetCode206.ListNode;
+import services.sorting.BubbleSort;
 
 import static services.linkedLists.leetCode206.Resolution.printList;
 import static services.linkedLists.leetCode206.Resolution.reverseList;
@@ -66,4 +67,13 @@ void main() {
 //
 //    System.out.println("Lista invertida:");
 //    printList(reversed);
+
+    int[] nums = {5,4,3,2,1};
+    int[] nums2 = {1,2,3,4,5};
+    int[] nums3 = {1,2,5,4,3};
+    System.out.println(Arrays.toString(BubbleSort.bubble(nums)));
+    System.out.println("-------------------------");
+    System.out.println(Arrays.toString(BubbleSort.bubble(nums2)));
+    System.out.println("-------------------------");
+    System.out.println(Arrays.toString(BubbleSort.bubble(nums3)));
 }
