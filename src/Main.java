@@ -1,3 +1,4 @@
+import services.binarios.LeetCode268;
 import services.linkedLists.doublyLinkedList.DoublyLinkedList;
 import services.sorting.BubbleSort;
 import services.sorting.mergeSort.ListNode;
@@ -78,14 +79,17 @@ void main() {
 //    System.out.println("-------------------------");
 //    System.out.println(Arrays.toString(BubbleSort.bubble(nums3)));
 
-    int[] values = {4, 2, 1, 3};
+//    int[] values = {4, 2, 1, 3};
+//
+//    System.out.println("Unsorted Linked List:");
+//    services.sorting.mergeSort.ListNode head = buildLinkedList(values);
+//    printLinkedList(head);
+//
+//    ListNode sortedHead = mergeSort(head);
+//
+//    System.out.println("Sorted Linked List:");
+//    printLinkedList(sortedHead);
 
-    System.out.println("Unsorted Linked List:");
-    services.sorting.mergeSort.ListNode head = buildLinkedList(values);
-    printLinkedList(head);
-
-    ListNode sortedHead = mergeSort(head);
-
-    System.out.println("Sorted Linked List:");
-    printLinkedList(sortedHead);
+    int[] nums = {3,0,1};
+    System.out.println(LeetCode268.missingNumber(nums));
 }
