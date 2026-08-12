@@ -1,4 +1,17 @@
 package services.binarios;
 
 public class LeetCode1342 {
+    public static int numberOfSteps(int num) {
+        int steps = 0;
+
+        while (num > 0) {
+            if ((num & 1) == 1) {
+                num -= 1;
+            } else {
+                num >>= 1;
+            }
+            steps += 1;
+        }
+        return steps;
+    }
 }
