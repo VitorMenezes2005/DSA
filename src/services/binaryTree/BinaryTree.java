@@ -4,7 +4,7 @@ public class BinaryTree {
     TreeNode root; // primeiro node
 
     public BinaryTree() {
-        this.root = null;
+        this.root = null; //a arvore inicia vazia
     }
 
     //metodo para inserir um node
@@ -17,7 +17,7 @@ public class BinaryTree {
     }
 
     //metodo que procura o lado certo para insercao
-    public void insertRecursive(TreeNode node, int val){
+    private void insertRecursive(TreeNode node, int val){
         if(val < node.val){
             if(node.left != null){
                 insertRecursive(node.left, val);

@@ -7,6 +7,7 @@ public class TreeNode {
 
     public TreeNode(int val){
         this.val = val;
+        //left e right ainda nao existem, por isso null
         this.left = null;
         this.right = null;
     }
