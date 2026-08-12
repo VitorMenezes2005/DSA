@@ -1,4 +1,5 @@
 import services.binarios.LeetCode268;
+import services.binaryTree.BinaryTree;
 import services.linkedLists.doublyLinkedList.DoublyLinkedList;
 import services.sorting.BubbleSort;
 import services.sorting.mergeSort.ListNode;
@@ -90,6 +91,19 @@ void main() {
 //    System.out.println("Sorted Linked List:");
 //    printLinkedList(sortedHead);
 
-    int[] nums = {3,0,1};
-    System.out.println(LeetCode268.missingNumber(nums));
+//    int[] nums = {3,0,1};
+//    System.out.println(LeetCode268.missingNumber(nums));
+
+    BinaryTree tree = new BinaryTree();
+
+    int[] valuesToInsert = {10, 5, 15, 3, 7, 12, 18};
+
+    for (int val : valuesToInsert) {
+        tree.insert(val);
+    }
+
+    System.out.println(tree.search(7));   // true
+    System.out.println(tree.search(14));  // false
+    System.out.println(tree.search(10));  // true
+    System.out.println(tree.search(31));  // false
 }
