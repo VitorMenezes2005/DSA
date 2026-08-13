@@ -1,12 +1,4 @@
-import services.binarios.LeetCode268;
-import services.binaryTree.BinaryTree;
-import services.linkedLists.doublyLinkedList.DoublyLinkedList;
-import services.sorting.BubbleSort;
-import services.sorting.mergeSort.ListNode;
-
-import static services.linkedLists.leetCode206.Resolution.printList;
-import static services.linkedLists.leetCode206.Resolution.reverseList;
-import static services.sorting.mergeSort.Resolution.*;
+import services.binaryTree.traversals.BinaryTree;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -93,6 +85,19 @@ void main() {
 
 //    int[] nums = {3,0,1};
 //    System.out.println(LeetCode268.missingNumber(nums));
+
+//    BinaryTree tree = new BinaryTree();
+//
+//    int[] valuesToInsert = {10, 5, 15, 3, 7, 12, 18};
+//
+//    for (int val : valuesToInsert) {
+//        tree.insert(val);
+//    }
+//
+//    System.out.println(tree.search(7));   // true
+//    System.out.println(tree.search(14));  // false
+//    System.out.println(tree.search(10));  // true
+//    System.out.println(tree.search(31));  // false
 
     BinaryTree tree = new BinaryTree();
 

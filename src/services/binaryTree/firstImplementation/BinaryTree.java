@@ -1,4 +1,4 @@
-package services.binaryTree;
+package services.binaryTree.firstImplementation;
 
 public class BinaryTree {
     TreeNode root; // primeiro node
