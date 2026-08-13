@@ -1,4 +1,4 @@
-package services.binaryTree.traversals;
+package services.binaryTree.traversals.preOrder;
 
 public class TreeNode {
     int val;

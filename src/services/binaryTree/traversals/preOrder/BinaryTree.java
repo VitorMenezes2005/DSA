@@ -1,6 +1,7 @@
-package services.binaryTree.traversals;
+package services.binaryTree.traversals.preOrder;
 
-import com.sun.source.tree.Tree;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BinaryTree {
     TreeNode root;
@@ -51,6 +52,22 @@ public class BinaryTree {
         }
 
         return searchRecursive(root.right, val);
+
+    }
+
+    public List<Integer> preOrderTraversal(){
+        List<Integer> result = new ArrayList<>();
+        preOrderRecursive(root, result);
+
+        return result;
+    }
+
+    private void preOrderRecursive(TreeNode node, List<Integer> result){
+        if(node != null){
+            result.add(node.val);
+            preOrderRecursive(node.left, result);
+            preOrderRecursive(node.right, result);
+        }
 
     }
 
