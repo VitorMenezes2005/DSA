@@ -1,4 +1,4 @@
-import services.binaryTree.traversals.inorder.BinaryTree;
+import services.binaryTree.traversals.postOrder.BinaryTree;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -122,13 +122,23 @@ void main() {
 
 //    System.out.println(tree.preOrderTraversal());
 
+//    BinaryTree tree = new BinaryTree();
+//
+//    int[] valuesToInsert = {10, 5, 15, 3, 7, 12, 18};
+//
+//    for (int val : valuesToInsert) {
+//        tree.insert(val);
+//    }
+
+//    System.out.println(tree.inorderTraversal());
+
     BinaryTree tree = new BinaryTree();
 
-    int[] valuesToInsert = {10, 5, 15, 3, 7, 12, 18};
+    int[] valuesToInsert = {5,3,1,10,7,15};
 
     for (int val : valuesToInsert) {
         tree.insert(val);
     }
 
-    System.out.println(tree.inorderTraversal());
+    System.out.println(tree.postorderTraversal());
 }
