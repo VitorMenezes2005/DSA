@@ -1,4 +1,4 @@
-import services.binaryTree.traversals.postOrder.BinaryTree;
+import services.binaryTree.traversals.preOrder.BinaryTree;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -132,13 +132,40 @@ void main() {
 
 //    System.out.println(tree.inorderTraversal());
 
-    BinaryTree tree = new BinaryTree();
+//    BinaryTree tree = new BinaryTree();
+//
+//    int[] valuesToInsert = {5,3,1,10,7,15};
+//
+//    for (int val : valuesToInsert) {
+//        tree.insert(val);
+//    }
+//
+//    System.out.println(tree.postorderTraversal());
 
-    int[] valuesToInsert = {5,3,1,10,7,15};
+    int [] valuesToInsert = {5,3,1,10,7,15};
 
-    for (int val : valuesToInsert) {
-        tree.insert(val);
+    BinaryTree preorder = new BinaryTree();
+    for(int x : valuesToInsert){
+        preorder.insert(x);
     }
+    System.out.println("PREORDER:");
+    System.out.println(preorder.preOrderTraversal());
+    System.out.println();
 
-    System.out.println(tree.postorderTraversal());
+    services.binaryTree.traversals.inorder.BinaryTree inorder = new services.binaryTree.traversals.inorder.BinaryTree();
+    for(int x : valuesToInsert){
+        inorder.insert(x);
+    }
+    System.out.println("INORDER:");
+    System.out.println(inorder.inorderTraversal());
+    System.out.println();
+
+    services.binaryTree.traversals.postOrder.BinaryTree postorder =new services.binaryTree.traversals.postOrder.BinaryTree();
+    for(int x : valuesToInsert){
+        postorder.insert(x);
+    }
+    System.out.println("POSTORDER:");
+    System.out.println(postorder.postorderTraversal());
+    System.out.println();
+
 }
