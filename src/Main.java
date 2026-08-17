@@ -1,4 +1,7 @@
+import services.binaryTree.leetCode094.TreeNode;
 import services.binaryTree.traversals.preOrder.BinaryTree;
+
+import static services.binaryTree.leetCode094.Resolution.inorderTraversal;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -142,30 +145,37 @@ void main() {
 //
 //    System.out.println(tree.postorderTraversal());
 
-    int [] valuesToInsert = {5,3,1,10,7,15};
+//    int [] valuesToInsert = {5,3,1,10,7,15};
+//
+//    BinaryTree preorder = new BinaryTree();
+//    for(int x : valuesToInsert){
+//        preorder.insert(x);
+//    }
+//    System.out.println("PREORDER:");
+//    System.out.println(preorder.preOrderTraversal());
+//    System.out.println();
+//
+//    services.binaryTree.traversals.inorder.BinaryTree inorder = new services.binaryTree.traversals.inorder.BinaryTree();
+//    for(int x : valuesToInsert){
+//        inorder.insert(x);
+//    }
+//    System.out.println("INORDER:");
+//    System.out.println(inorder.inorderTraversal());
+//    System.out.println();
+//
+//    services.binaryTree.traversals.postOrder.BinaryTree postorder =new services.binaryTree.traversals.postOrder.BinaryTree();
+//    for(int x : valuesToInsert){
+//        postorder.insert(x);
+//    }
+//    System.out.println("POSTORDER:");
+//    System.out.println(postorder.postorderTraversal());
+//    System.out.println();
 
-    BinaryTree preorder = new BinaryTree();
-    for(int x : valuesToInsert){
-        preorder.insert(x);
-    }
-    System.out.println("PREORDER:");
-    System.out.println(preorder.preOrderTraversal());
-    System.out.println();
-
-    services.binaryTree.traversals.inorder.BinaryTree inorder = new services.binaryTree.traversals.inorder.BinaryTree();
-    for(int x : valuesToInsert){
-        inorder.insert(x);
-    }
-    System.out.println("INORDER:");
-    System.out.println(inorder.inorderTraversal());
-    System.out.println();
-
-    services.binaryTree.traversals.postOrder.BinaryTree postorder =new services.binaryTree.traversals.postOrder.BinaryTree();
-    for(int x : valuesToInsert){
-        postorder.insert(x);
-    }
-    System.out.println("POSTORDER:");
-    System.out.println(postorder.postorderTraversal());
-    System.out.println();
+    TreeNode root = new TreeNode(1);
+    root.left = null;
+    root.right = new TreeNode(2);
+    root.right.left = new TreeNode(3);
+    List<Integer> resultado = inorderTraversal(root);
+    System.out.println(resultado);
 
 }
